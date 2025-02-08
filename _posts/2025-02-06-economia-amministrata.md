@@ -87,14 +87,12 @@ Per ogni unità di acciaio:
 di conseguenza la matrice A diventa
 
 $$
-A = 
-\
+\mathbf{A} = 
 \begin{pmatrix}
 0   & 0   & 0,4 \\
 0   & 0   & 0,3 \\
 0   & 0   & 0
 \end{pmatrix}
-\
 $$
 
 a questo punto definiamo
