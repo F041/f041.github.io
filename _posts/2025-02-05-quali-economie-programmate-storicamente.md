@@ -84,20 +84,15 @@ Per ogni unità di acciaio:
   * può sembrare una osservazione inutile ma in certi settori, tipo l'energia, serve un input energetico. Un po' come avviare la macchina tramite l'energia meccanica del girare la chiave   
 
 di conseguenza la matrice A diventa
-
 $$
 A =
-\
 \begin{pmatrix}
-0   & 0   & 0,4 \\
-0   & 0   & 0,3 \\
-0   & 0   & 0
+0 & 0 & 0,4 \\
+0 & 0 & 0,3 \\
+0 & 0 & 0
 \end{pmatrix}
-\
 $$
-
 a questo punto definiamo
-
 $$
 \mathbf{S} =
 \begin{pmatrix}
