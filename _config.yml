@@ -16,9 +16,9 @@ timezone: Europe/Rome
 
 title: Economia programmata partecipata # the main title
 
-tagline: un modello politico-economico che unisce pianificazione centralizzata e partecipazione attiva, che produce per le necessità umane anziché i profitti
+tagline: un modello politico-economico che unisce pianificazione e partecipazione attiva, che produce per le necessità umane anziché i profitti
 description: >- # used by seo meta and the atom feed
-  modello politico-economico che unisce pianificazione centralizzata e partecipazione attiva, che produce per le necessità umane anziché i profitti
+  modello politico-economico che unisce pianificazione e partecipazione attiva, che produce per le necessità umane anziché i profitti
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
