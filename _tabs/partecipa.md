@@ -1,6 +1,6 @@
 ---
 layout: page
-icon: fa-solid fa-handshak
+icon: fa-solid fa-handshake
 order: 3
 ---
 
