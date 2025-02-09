@@ -243,7 +243,7 @@ in tante aziende d'informatica, ad esempio di consulenza, capita di manager che 
 Non diverso il discorso nella pubblica amministrazione. Certe pianificazioni vengono fatte da persone che non hanno mai speso un'ora della loro vita in un ufficio o uno sportello.
 Ai lavoratori informatici va però meglio dei dipendenti pubblici: esistono casi di auto-organizzazione, tramite la metodologia AGILE. I lavoratori prendono decisioni e gestiscono le proprie attività senza dover attendere direttive continue da un supervisore. La dirigenza, agisce da facilitatore, creando l'ambiente giusto affinché l squadra prosperi. Il partito della burocrazia sovietica, nella pratica, aveva obiettivi molto diversi da questo. Nonostante si trattava di una istituzione pubblica, anziché privata come nel caso delle aziende d'informatica citate.
 
-
+Vuoi raccontare questa storia tecnica? Partecipa [al GdL comunicazione](https://f041.github.io/about/). Se invece vuoi rendere questa storia interattiva tramite un giooc, puoi partecipare al GdL tecnologia. 
 
 
 
