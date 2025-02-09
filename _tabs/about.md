@@ -29,7 +29,7 @@ Al fine di aumentare le probabilità di rendere operativo questo modello, esisto
 
 * GdL comunicazione: per fare arrivare i contenuti in molti canali 
 
-* GdL arte: la poetica del futuro va comunicata in varie forme (es. musica, disegno, videogiochi), oltre che in canali e formati diversi 
+* GdL arte: la poetica del futuro va comunicata in varie forme (es. musica, disegno, videogiochi), oltre che in canali e formati diversi. Vuoi proporre un nuovo logo? Ben venga
 
 * GdL legale: per supporto e consulenza
 
