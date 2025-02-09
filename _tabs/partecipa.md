@@ -1,7 +1,7 @@
 ---
 layout: page
 icon: fa-solid fa-handshake
-order: 3
+order: 2
 ---
 
 puoi dare diversi contributi al progetto:
