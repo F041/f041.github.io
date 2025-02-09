@@ -32,3 +32,5 @@ Il governo italiano interveniva in settori chiave senza dirigere l’intera econ
 ### Piani regolatori 
 In Europa esiste un caso particolare di pianificazione settoriale "morbida", che non passa dal possesso di aziende pubbliche: l’UE non gestisce direttamente la produzione ma stabilisce obiettivi strategici tramite norme per guidare l’evoluzione di settori specifici.
 Esempi: transizione ecologica, innovazione tecnologica (es. Horizon), politiche agricole (PAC), digitalizzazione, bottiglie di plastica con tappo non removibile, etc.
+
+Vuoi raccontare questo riassunto o ampliandorlo? Partecipa [al GdL comunicazione](https://f041.github.io/about/).
