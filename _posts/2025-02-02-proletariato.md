@@ -2,7 +2,7 @@
 title: Esiste il proletariato oggi?
 date: 2025-02-02 14:49:12 
 categories: [storia,lavoratori]
-tags: [proletariato,lavoratori]
+tags: [proletariato,lavoratori,precari]
 ---
 
 ## Riflessione linguistica
@@ -16,7 +16,7 @@ se con proletariato intendiamo coloro che vivono **principalemnte** del salario,
 
 ## Una definizione
 proviamo ora a creare una lista di caratteristiche 
-* instabilità ed incertezza economica
+* instabilità ed incertezza economica o precariato
   * che significa anche totale dipendenza da un unico fornitore di lavoro
 * lavorare in settori dove la paga dipende strettamente dagli obiettivi raggiunti
   * es logistica, rider, etc.
