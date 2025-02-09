@@ -25,6 +25,9 @@ Alcuni paesi  adottano forme di pianificazione in settori specifici:
 Giappone (MITI): Negli anni '50 e '60, il Ministero dell’Industria e del Commercio Internazionale (MITI) coordinava lo sviluppo industriale, promuovendo settori strategici come l’elettronica e l’automobile.
 Corea del Sud: Ha usato piani quinquennali per guidare la crescita economica dagli anni '60 in poi, combinando il supporto statale con l'iniziativa privata.
 ### Economia mista con pianificazione settoriale 
+L'esempio più di successo viene sicuramente dalla Germania Nazista. Successo qui nasconde un po' di umorismo british. La pianificazione settoriale coinvolgeva il settore ovviamente bellico, quindi per lo più industria pesante collegata ai metalli e alla lavorazione di questi. Imperativo citare l'azienda bellica Krupp, che ha avuto un ruolo nel successo politico di Hitler, in quanto allineati nell'obiettivo del riarmo per aggirare le limitazioni imposte dal Trattato di Versailles (conseguenza fine prima guerra mondiale).
+Il governo nazista fissava investimenti, prezzi (anche per la pace sociale) e quantità. In una economia di guerra d'espansione, questo ha senso, infatti la pianificazione avviene in genere in periodi di guerra per vari paesi. Ma appunto, quello della Germania Nazista risulta il caso più particolare. Infatti merita un articolo a parte, anche per capire *come* si arriva a quel tipo di modello e perché proprio in Germania e non in altri stati fascisti, tipo la Spagna di Franco.
+
 Il governo italiano interveniva in settori chiave senza dirigere l’intera economia, tramite l'IRI. Questo darà più che altro i suoi frutti dopo la secodna guerra mondiale.
 ### Piani regolatori 
 In Europa esiste un caso particolare di pianificazione settoriale "morbida", che non passa dal possesso di aziende pubbliche: l’UE non gestisce direttamente la produzione ma stabilisce obiettivi strategici tramite norme per guidare l’evoluzione di settori specifici.
