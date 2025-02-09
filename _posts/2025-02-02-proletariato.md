@@ -27,6 +27,8 @@ proviamo ora a creare una lista di caratteristiche
   * ossia competere sul prezzo, caratteristica dei beni di largo consumo anziché servizi. Avere un hotel rientra in questa casistica, così come offrire servizi di creazione siti web su piattaforme dove esistono altri N mila fornitori simili
 
 
+Vuoi raccontare la tua realtà da senza prole precario? Partecipa [al GdL arte](https://f041.github.io/about/).
+
 ``` javascript
 console.log("miao")
 ```
