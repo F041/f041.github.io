@@ -2,6 +2,7 @@
 # default layout: page, layout: post
 icon: fas fa-info-circle
 order: 1
+toc: true
 ---
 
 ## A chi si rivolge?
