@@ -3,6 +3,7 @@ title: Esiste il proletariato oggi?
 date: 2025-02-02 14:49:12 
 categories: [storia,lavoratori]
 tags: [proletariato,lavoratori,precari]
+pin: true
 ---
 
 ## Riflessione linguistica
