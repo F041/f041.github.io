@@ -40,6 +40,6 @@ Al fine di aumentare le probabilità di rendere operativo questo modello, esisto
 
 * GdL tecnologia: si occupa della infrastruttura informatica e non solo
 
-Idealmente la partecipazione richiede un input di 1-3 ore a settimana per persona.
+Idealmente la partecipazione richiede un input di 1-3 ore a settimana per persona e dalle [4000 alle 90 mila persone](https://f041.github.io/posts/i-numeri-per-avere-impatto/). Dall'ultimo numero si potrebbe fare il salto internazionale. 
 
 
