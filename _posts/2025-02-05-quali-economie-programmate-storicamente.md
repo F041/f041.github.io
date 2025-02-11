@@ -3,6 +3,7 @@ title: Quali economie programmate sono esistite storicamente?
 date: 2025-02-05 14:49:12 
 categories: [storia,economia]
 tags: [urss,francia,italia,iri,jugoslavia]
+pin: true
 ---
 
 Storicamente, le economie programmate o pianificate si sono sviluppate in diversi contesti e di conseguenza presentano caratteristiche differenti. Ecco alcune delle principali tipologie:
