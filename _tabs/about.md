@@ -1,5 +1,5 @@
 ---
-# the default layout is 'page'
+layout: posts
 icon: fas fa-info-circle
 order: 1
 ---
