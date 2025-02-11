@@ -4,7 +4,7 @@ date: 2025-02-06 14:09:12 +0100
 categories: [storia, economia]
 tags: [urss, bilanci]
 math: true
-
+pin: true
 ---
 
 In un’economia pianificata centralmente, come quella dell’URSS, ogni settore (ad esempio, l’industria, l’agricoltura, ecc.) produce dei beni. Questi beni non servono solo per la vendita a consumatori, ma anche come input per far produrre altri beni ad altre aziende. Tutto ciò che entra in un processo produttivo esce, magari sotto forma di prodotti finiti, scarti o come materia prima per altri settori, un po' come per i bilanciamenti delle equazioni chimiche. Possiamo esprimere e studiare questi bilanci utilizzando gli strumenti dell’algebra lineare e le equazioni di primo grado, quindi si può capire gran parte di quanto segue avendo completato la scuola media. 
