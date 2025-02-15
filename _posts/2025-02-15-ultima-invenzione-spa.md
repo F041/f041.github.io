@@ -1,6 +1,6 @@
 --- 
 title: "L’ultima invenzione delle leggi per le imprese per il profitto" 
-date: 2025-02-17 16:09:12 +0100 
+date: 2025-02-15 16:09:12 +0100 
 categories: [economia] 
 tags: [spa,grandi aziende] 
 --- 
