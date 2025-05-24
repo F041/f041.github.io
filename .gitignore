@@ -25,3 +25,5 @@ package-lock.json
 # Misc
 _sass/vendors
 assets/js/dist
+_sass/main.scss
+_sass/custom/_custom.scss
