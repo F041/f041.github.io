@@ -1,6 +1,6 @@
 ---
 title: "Bilancio partecipato o economia partecipata?"
-date: 2025-05-29 14:09:12 +0100
+date: 2025-06-28
 categories: [economia]
 tags: [comuni,bilanci]
 ---
