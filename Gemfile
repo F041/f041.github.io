@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-gem "jekyll-theme-chirpy", "~> 7.2", ">= 7.2.4"
+gem "jekyll-theme-chirpy", "7.4.0" # fissato a v7.4.0 (2025) = la versione del lock locale che non dava problemi
 
 gem "html-proofer", "~> 5.0", group: :test
 

@@ -1,7 +1,7 @@
 # Bundler cache
 .bundle
 vendor
-Gemfile.lock
+# Gemfile.lock è versionato per fissare la versione del tema
 
 # Jekyll cache
 .jekyll-cache
