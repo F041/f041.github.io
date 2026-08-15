@@ -36,6 +36,8 @@ Parlare di "socialismo che non funziona" è comodo; la cosa più vera da dire è
 
 Ne esce la contraddizione classica: **surplus e carenze nello stesso centro di distribuzione.** Più burro in Siberia e zero latte a Mosca, perché il feedback non c'era. E quando il feedback esisteva, la burocrazia lo "aggiustava" per conformarsi al piano: i rappresentanti locali presentavano sempre risultati fedeli alle previsioni. Distorsione dei dati, come i "risultati" falsi di un progetto a cascata che non si vuole ammettere storto.
 
+E qui sta il punto più sottile: quando il numero (quelle 100.000 unità previste) diventa l'obiettivo, smette di descrivere la realtà. **Ottimizzare una metrica può peggiorare il sistema che quella metrica dovrebbe descrivere**: il pianificatore non governa più l'economia reale, ma una **rappresentazione deformata** dell'economia.
+
 > Nota: non è la *pianificazione* che ha fallito. È la **pianificazione a cascata**, senza feedback, senza partecipazione, al servizio di un potere (stato-burocronico) e non dei bisogni umani — con un burocrate che "aggiustava" i dati per conformarsi al piano. Come si conclude in [economia amministrata](/posts/economia-amministrata/), **le distorsioni della burocrazia si riducono a un problema di qualità del dato**, e la via d'uscita è la **decentralizzazione tramite programmazione partecipata**, non una calata dall'alto. È la stessa conclusione che si tira da un progetto software: a cascata va bene quando il problema è noto e stabile; va male quando il contesto cambia.
 
 ## Dove l'agile ha avuto la sua "economia": poche prove vere, tanti compromessi col mercato
@@ -48,6 +50,14 @@ Le esperienze di economia partecipata/iterativa esistono, ma sono state quasi se
 - **La perestrojka** fu un tentativo tardivo di aggiungere cicli, feedback e partecipazione a un impianto a cascata ormai putrescente.
 
 La lezione è netta: dove l'agile è stato messo in discussione non è mai stato l'agile in sé. È stato l'**interscambio con un mercato che compete**, i cui prezzi hanno sovrascritto i cicli partecipativi.
+
+## Chi conosce meglio la realtà?
+
+Chi conosce meglio le esigenze di un ospedale: il ministero che fissa gli obiettivi annuali o gli infermieri che lavorano nei reparti? Chi sa se un determinato macchinario serve davvero: il tecnico che lo usa o il pianificatore che legge una tabella? Chi può accorgersi per primo che una procedura è diventata inutile: il funzionario che la applica ogni giorno o l'ufficio che l'ha pensata anni fa?
+
+In un sistema a cascata l'informazione scende dal piano. In un sistema partecipativo, invece, sale: da chi produce, da chi consuma, da chi vive ogni giorno la conseguenza delle decisioni. Il lavoratore non è solo un esecutore: è un **sensore dell'economia**, un nodo informativo. L'infermiere che vede che una procedura non funziona, il tecnico che conosce la linea produttiva, il funzionario che applica una regola inefficace: sono tutti sorgenti di informazione. Non sono "risorse umane": sono nodi informativi dell'economia.
+
+La **qualità del dato** non si costruisce aggiungendo burocrazia, ma verificando l'informazione dove nasce. E qui i **sindacati e le associazioni** sono di solito la punta di diamante della qualità del dato: aggregano la voce di chi lavora e restituiscono a chi pianifica un'informazione più fedele alla realtà.
 
 ## Che cos'è allora l'economia "agile" che questo sito propone?
 
@@ -64,5 +74,7 @@ L'economia programmata partecipata non è "pianificazione a cascata", e non è n
 ## In conclusione
 
 L'URSS non ha fallito perché pianificava. Ha fallito perché pianificava **a cascata**: un'unica specifica stabilita a monte una volta per tutte, nessun feedback dai basso, e la burocrazia che presentava risultati sempre conformi al piano. La lezione per chi vuole un'economia per le persone è chiara: **non si vince punto su punto con un imponente documento iniziale.** Si vince con cicli brevi, feedback reale e partecipazione. Come spiega [economia amministrata](/posts/economia-amministrata/), il limite non è la tecnica — si riduce alla **qualità del dato** e alla mancanza di **decentralizzazione tramite programmazione partecipata**; i cosiddetti "contrordine" dei piani a cascata non sono feedback, sono ritocchi su un errore costoso.
+
+Una struttura sana non è quella che non sbaglia mai: è quella che scopre presto di aver sbagliato e riesce a correggersi senza collassare. Il piano migliore non è quello che pretende di conoscere il futuro, ma quello che **sa cambiare quando il futuro dimostra che aveva torto**.
 
 Il prossimo ciclo non lo scrive un unico pianificatore a cascata: lo costruisce chi produce, chi consuma e chi sa ascoltare il feedback. Se questo articolo ti ha spostato un pensiero, [entra nel Gruppo di Lavoro dedicato](https://f041.github.io/about/) e porta la tua voce nel prossimo sprint. Vuoi ampliare questa analisi (con altri casi storici di "agile economica")? Partecipa al [GdL comunicazione](https://f041.github.io/about/).
