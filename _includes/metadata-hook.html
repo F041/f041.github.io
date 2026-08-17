@@ -1,0 +1,44 @@
+<!-- ===== Custom metadata hook: tooltip del glossario ===== -->
+
+<style>
+  .glossary-tip {
+    cursor: help;
+    position: relative;
+    border-bottom: 1px dotted var(--border-color, rgba(128, 128, 128, 0.6));
+    color: inherit;
+  }
+  .glossary-tip::after {
+    content: attr(data-def);
+    position: absolute;
+    left: 50%;
+    bottom: calc(100% + 8px);
+    transform: translateX(-50%) translateY(4px);
+    width: max-content;
+    max-width: 280px;
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    background: var(--card-bg, #333);
+    color: var(--text-color, #fff);
+    border: 1px solid var(--border-color, #888);
+    font-size: 0.85rem;
+    line-height: 1.45;
+    text-align: left;
+    font-weight: 400;
+    white-space: normal;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.28);
+    transition: opacity 0.15s ease, transform 0.15s ease;
+    z-index: 20;
+  }
+  .glossary-tip:hover::after,
+  .glossary-tip:focus::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+</style>
+
+<script id="glossary-data" type="application/json">
+{{ site.data.glossary | jsonify }}
+</script>
+<script defer src="{{ '/assets/js/glossary-tooltip.js' | relative_url }}"></script>

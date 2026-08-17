@@ -1,0 +1,47 @@
+- id: economia-programmata-partecipata
+  term: economia programmata partecipata
+  def: Il modello del sito: pianificazione unita alla partecipazione attiva di lavoratori e cittadini.
+
+- id: legge-del-valore
+  term: legge del valore
+  def: Il valore di una merce dipende dal lavoro medio necessario a produrla; il prezzo ne è solo la traccia fluttuante.
+
+- id: costo-marginale
+  term: costo marginale
+  def: Quanto costa produrre un'unità in più di un bene o servizio; nel digitale tende a zero.
+
+- id: economia-di-scala
+  term: economia di scala
+  def: Produrre in grandi quantità abbassa il costo medio per singola unità.
+
+- id: valore-di-scambio
+  term: valore di scambio
+  def: Il rapporto, espresso dal prezzo, in cui una merce si scambia con le altre.
+
+- id: valore-duso
+  term: valore d'uso
+  def: L'utilità concreta di un bene per soddisfare un bisogno umano.
+
+- id: bilancio-materiale
+  term: bilancio materiale
+  def: Schema contabile che fa combaciare quanto serve e quanto si produce di ogni bene.
+
+- id: monopolio
+  term: monopolio
+  def: Un solo venditore domina il mercato e impone prezzi e condizioni.
+
+- id: monopsonio
+  term: monopsonio
+  def: Un solo compratore domina il mercato e può imporre prezzi al ribasso.
+
+- id: cogestione
+  term: cogestione
+  def: Partecipazione dei lavoratori alle decisioni aziendali, di solito parziale.
+
+- id: quota-di-mercato
+  term: quota di mercato
+  def: La parte di un mercato controllata da una singola azienda.
+
+- id: filiera
+  term: filiera
+  def: L'intera catena che porta un bene dal produttore al consumatore.
