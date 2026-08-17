@@ -33,6 +33,9 @@ Un piccolo dizionario dei termini usati negli articoli, spiegati in parole sempl
 **Costo marginale**
 : Quanto costa produrre *un'unità in più* di un bene o servizio. Nell'informatica e nei servizi digitali tende a zero: una volta creato un software, copiarlo costa quasi nulla. Questo cambia le regole del gioco del profitto.
 
+**Costo medio**
+: Il costo totale di produzione diviso per le unità prodotte, che scende con l'economia di scala.
+
 ## D
 
 **DAO (Organizzazione Autonoma Decentralizzata)**
@@ -45,6 +48,9 @@ Un piccolo dizionario dei termini usati negli articoli, spiegati in parole sempl
 : Insieme dei compratori (domanda) e dei venditori (offerta) di un bene; il loro incontro determina il prezzo di mercato. È il meccanismo attraverso cui opera la [legge del valore](#legge-del-valore).
 
 ## E
+
+**Economia amministrata**
+: Pianificazione che decide dall'alto senza partecipazione: i piani vengono imposti e la burocrazia tende a distorcere i dati. È il problema raccontato in [economia amministrata](/posts/economia-amministrata/).
 
 **Economia di scala**
 : Il fatto che produrre *in grandi quantità* abbassa il costo medio per unità. Le grandi aziende ne dipendono, e per questo devono vendere volumi costanti (vedi [tragedie del profitto](/posts/tragedie-del-profitto/)).
@@ -103,6 +109,9 @@ Un piccolo dizionario dei termini usati negli articoli, spiegati in parole sempl
 
 **S.p.A. (Società per Azioni)**
 : Forma societaria di molte grandi aziende: il capitale è diviso in azioni, e chi ha più azioni ha più potere di voto. Concentra di fatto il potere decisionale in pochi: vedi [l'ultima invenzione: la S.p.A.](/posts/ultima-invenzione-spa/).
+
+**Surplus**
+: L'eccesso di produzione che resta quando si produce più di quanto serve, tipico della pianificazione che ignora i bisogni reali.
 
 ## V
 

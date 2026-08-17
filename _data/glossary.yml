@@ -45,3 +45,43 @@
 - id: filiera
   term: filiera
   def: L'intera catena che porta un bene dal produttore al consumatore.
+
+- id: dazi
+  term: dazi
+  def: Imposte sulle merci importate, che alzano il prezzo dei prodotti esteri per proteggere la produzione interna.
+
+- id: esproprio
+  term: esproprio
+  def: Trasferimento (anche forzoso) di una proprietà, spesso deciso da chi detiene il potere e spesso senza un indennizzo adeguato.
+
+- id: indennizzo
+  term: indennizzo
+  def: La somma che dovrebbe compensare chi perde una proprietà, ma che nella pratica l'esproprio spesso non prevede.
+
+- id: cooperativa
+  term: cooperativa
+  def: Impresa in cui i lavoratori sono anche soci e partecipano a decisioni e risultati.
+
+- id: gosplan
+  term: Gosplan
+  def: L'agenzia centrale di pianificazione dell'URSS, autrice dei piani quinquennali.
+
+- id: piano-quinquennale
+  term: piano quinquennale
+  def: Piano economico sovietico che fissava gli obiettivi di produzione su 5 anni, da correggere a metà solo a prezzo di ammettere un fallimento.
+
+- id: surplus
+  term: surplus
+  def: L'eccesso di produzione che resta quando si produce più di quanto serve.
+
+- id: domanda-e-offerta
+  term: domanda e offerta
+  def: L'incontro tra chi compra e chi vende, che determina i prezzi di mercato.
+
+- id: economia-amministrata
+  term: economia amministrata
+  def: Una pianificazione che decide dall'alto senza partecipazione, con dati spesso distorti dalla burocrazia.
+
+- id: costo-medio
+  term: costo medio
+  def: Il costo totale di produzione diviso per le unità prodotte, che scende con l'economia di scala.
