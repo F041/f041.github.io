@@ -23,6 +23,9 @@
   // Stylint extension settings
   "stylelint.snippet": ["css", "scss"],
   "stylelint.validate": ["css", "scss"],
+  // Live Server ("Go Live"): mostra il sito generato da Jekyll, non i sorgenti.
+  // Serve `jekyll serve` (o `jekyll build --watch`) acceso in parallelo.
+  "liveServer.settings.root": "/_site",
   // Run tasks in macOS
   "terminal.integrated.profiles.osx": {
     "zsh": { "path": "/bin/zsh", "args": ["-l", "-i"] }

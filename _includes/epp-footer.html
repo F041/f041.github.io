@@ -1,0 +1,20 @@
+<!-- Footer (stile A) -->
+<footer class="epp-footer">
+  <div class="epp-wrap epp-footer__inner">
+    <div class="epp-footer__claim">
+      <p class="epp-footer__tagline">Produrre per le necessità umane<br>anziché per i profitti.</p>
+      <p class="epp-footer__meta">
+        © {{ 'now' | date: '%Y' }}
+        <a href="{{ site.social.links[0] }}">{{ site.social.name }}</a>
+        · sorgente su GitHub
+      </p>
+    </div>
+    <ul class="epp-footer__links">
+      <li><a href="{{ '/glossario/' | relative_url }}">Glossario</a></li>
+      <li><a href="{{ '/categories/' | relative_url }}">Categorie</a></li>
+      <li><a href="{{ '/tags/' | relative_url }}">Tag</a></li>
+      <li><a href="{{ '/feed.xml' | relative_url }}">Feed RSS</a></li>
+      <li><a href="{{ site.social.links[0] }}">GitHub</a></li>
+    </ul>
+  </div>
+</footer>

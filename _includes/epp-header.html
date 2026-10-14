@@ -1,0 +1,25 @@
+<!-- Menu principale (stile A) -->
+{% assign nav_items = 'percorsi|Percorsi,archives|Articoli,glossario|Glossario,about|Chi siamo' | split: ',' %}
+
+<header class="epp-header">
+  <div class="epp-wrap epp-header__inner">
+    <a class="epp-brand" href="{{ '/' | relative_url }}">
+      <span class="epp-brand__mark" aria-hidden="true">EPP</span>
+      <span class="epp-brand__name">Economia programmata<br>partecipata</span>
+    </a>
+
+    <nav class="epp-nav" aria-label="Principale">
+      {% for item in nav_items %}
+        {% assign parts = item | split: '|' %}
+        {% assign item_url = '/' | append: parts[0] | append: '/' %}
+        {% if page.url == item_url or parts[0] == 'archives' and page.layout == 'post' %}
+          <a href="{{ item_url | relative_url }}" aria-current="page">{{ parts[1] }}</a>
+        {% else %}
+          <a href="{{ item_url | relative_url }}">{{ parts[1] }}</a>
+        {% endif %}
+      {% endfor %}
+    </nav>
+
+    <a class="epp-btn epp-btn--ink" href="{{ '/partecipa/' | relative_url }}">Partecipa</a>
+  </div>
+</header>

@@ -1,0 +1,31 @@
+# Percorsi di lettura mostrati in homepage.
+# `ancora` è l'id del titolo corrispondente in _tabs/percorsi.md (generato da kramdown).
+- nome: Da zero
+  desc: I concetti essenziali, uno dietro l'altro, senza saltare
+  articoli: 6
+  ancora: da-zero-non-sai-ancora-nulla-del-progetto
+  badge: Prima volta qui
+- nome: Chi lavora nell'informatica
+  desc: Progetto, iterazione, qualità del dato, costo marginale
+  articoli: 5
+  ancora: per-chi-lavora-nellinformatica
+- nome: Chi lavora nella pubblica amministrazione
+  desc: "Conosci già la pianificazione: conta chi decide"
+  articoli: 5
+  ancora: per-chi-lavora-nella-pubblica-amministrazione
+- nome: Chi è immigrato e lavora in Italia
+  desc: Contratti e garanzie valgono quando ci si organizza
+  articoli: 4
+  ancora: per-chi-è-immigrato-e-lavora-in-italia
+- nome: Studenti
+  desc: Dai fondamentali ai temi di oggi, al tuo ritmo
+  articoli: 5
+  ancora: per-gli-studenti
+- nome: Piccolo commerciante
+  desc: Il modello visto dal tuo bancone
+  articoli: 4
+  ancora: per-il-piccolo-commerciante
+- nome: Piccolo imprenditore
+  desc: "Costi, margini, filiere: ti riguarda più di quanto pensi"
+  articoli: 5
+  ancora: per-il-piccolo-imprenditore

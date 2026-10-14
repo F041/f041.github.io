@@ -32,6 +32,7 @@ Conosci già la pianificazione: la tua esperienza la rende migliore o peggiore a
 3. [Bilancio partecipato o economia partecipata?](/posts/bilancio-partecipato-o-economia-partecipata/): perché decidere come spendere non basta.
 4. [Ruolo delle aziende private](/posts/ruolo-aziende-private/): che spazio resta al privato nel modello.
 5. [Economia programmata partecipata che produce per il profitto?](/posts/economia-programmata-partecipata-profitto/): il cuore del modello.
+
 ---
 ## Per chi è immigrato e lavora in Italia
 
@@ -76,6 +77,7 @@ Gestisci già una produzione: sai cosa sono costi, margini e quote di mercato. I
 3. [Economia programmata privata: l'esempio dell'alimentazione](/posts/economia-programmata-privata-esempio-alimentazione/): filiera e monopsonio dal tuo punto di vista.
 4. [I numeri per avere impatto](/posts/i-numeri-per-avere-impatto/): le dimensioni contano: quanto è grande "abbastanza".
 5. [Economia programmata partecipata che produce per il profitto?](/posts/economia-programmata-partecipata-profitto/): il modello da imprenditore.
+
 ---
 
 ## Da zero (non sai ancora nulla del progetto)
