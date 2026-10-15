@@ -37,9 +37,11 @@
 </header>
 
 <script>
-  // "Cerca" apre la ricerca di Chirpy: su schermi piccoli passa dal suo pulsante, poi mette il cursore nel campo
+  /* Negli script inline solo commenti a blocco: in produzione l'HTML viene compresso su una riga
+     e un commento a doppia barra si mangerebbe tutto il codice che segue. */
+  /* "Cerca" apre la ricerca di Chirpy: su schermi piccoli passa dal suo pulsante, poi mette il cursore nel campo */
   document.addEventListener('DOMContentLoaded', function () {
-    // tema: usa lo stesso meccanismo di Chirpy (Theme.flip), che ricorda la scelta per la sessione
+    /* tema: usa lo stesso meccanismo di Chirpy (Theme.flip), che ricorda la scelta per la sessione */
     var themeBtn = document.getElementById('epp-theme-toggle');
     if (themeBtn) {
       themeBtn.addEventListener('click', function () {

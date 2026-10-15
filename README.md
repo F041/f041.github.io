@@ -46,3 +46,11 @@ e il selettore `#main-wrapper > .container > .row`.
 
 - Nei testi di `_data/locales/it-IT.yml` usare l'apostrofo tipografico `’`: alcuni finiscono in script tra apici singoli (la ricerca si rompe con `'`).
 - Chirpy richiede Ruby 3.x (`~> 3.1`); la GitHub Action usa la 3.3. Ruby 4 non è compatibile.
+- Negli script scritti dentro l'HTML (`<script>` in layout e include) usare solo commenti `/* … */`, mai `//`: in produzione Chirpy comprime l'HTML su una riga e un `//` disattiva tutto il codice che segue, senza errori in console. In locale (`jekyll serve`) l'HTML non è compresso e il problema non si vede.
+
+### Provare il sito in locale (Windows)
+
+- Ruby 3.3 x64 di RubyInstaller (con DevKit) in `C:\Ruby33-x64`, nel PATH. Le gem si installano nella cartella utente e i loro comandi (`bundle`, `jekyll`, `htmlproofer`) finiscono in `%LOCALAPPDATA%\Microsoft\WindowsApps`, che deve stare nel PATH dell'utente.
+- `bundle install`, poi `bundle exec jekyll serve --livereload` e il sito è su http://127.0.0.1:4000.
+- Per vedere il sito come online (HTML compresso): `$env:JEKYLL_ENV='production'; bundle exec jekyll build -d <cartella>`.
+- htmlproofer, come nella GitHub Action: `bundle exec htmlproofer <cartella> --disable-external`. Su Windows gli serve libcurl, da installare una volta da un PowerShell come amministratore con `ridk exec pacman -S --needed --noconfirm mingw-w64-ucrt-x86_64-curl`, poi copiare `C:\Ruby33-x64\msys64\ucrt64\bin\libcurl-4.dll` in `libcurl.dll` nella stessa cartella.

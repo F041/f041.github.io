@@ -160,8 +160,9 @@ layout: default
 </section>
 
 <script>
-  // Gli ingranaggi (three.js, ~170 KB) partono solo a pagina caricata e con il browser libero:
-  // così non rallentano la prima interazione da telefono. Con "Risparmio dati" non si caricano.
+  /* Gli ingranaggi (three.js, ~170 KB) partono solo a pagina caricata e con il browser libero:
+     così non rallentano la prima interazione da telefono. Con "Risparmio dati" non si caricano.
+     Solo commenti a blocco: in produzione l'HTML è compresso su una riga. */
   (function () {
     var conn = navigator.connection;
     if (conn && conn.saveData) return;
