@@ -1,7 +1,8 @@
 ---
 title: "Quella camicia sudicia e sporca di sangue di nome comunismo"
+description: "Come chiamerebbe questo progetto Lenin? Dal suo scritto sul nome del partito, una riflessione sulla parola comunismo e sul peso che porta oggi."
 date: 2026-02-01 10:00:00 +0200
-categories: [Storia]
+categories: [storia]
 tags: [comunismo]
 ---
 

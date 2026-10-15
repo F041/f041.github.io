@@ -159,4 +159,23 @@ layout: default
   </div>
 </section>
 
-<script type="module" src="{{ '/assets/js/epp-gears.js' | relative_url }}"></script>
+<script>
+  // Gli ingranaggi (three.js, ~170 KB) partono solo a pagina caricata e con il browser libero:
+  // così non rallentano la prima interazione da telefono. Con "Risparmio dati" non si caricano.
+  (function () {
+    var conn = navigator.connection;
+    if (conn && conn.saveData) return;
+    var start = function () {
+      var s = document.createElement('script');
+      s.type = 'module';
+      s.src = "{{ '/assets/js/epp-gears.js' | relative_url }}";
+      document.body.appendChild(s);
+    };
+    var whenIdle = function () {
+      if ('requestIdleCallback' in window) window.requestIdleCallback(start, { timeout: 3000 });
+      else setTimeout(start, 1500);
+    };
+    if (document.readyState === 'complete') whenIdle();
+    else window.addEventListener('load', whenIdle);
+  })();
+</script>

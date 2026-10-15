@@ -1,5 +1,6 @@
 ---
 title: "Il ruolo delle aziende private in una economia programmata e partecipata"
+description: "Che posto hanno le aziende private in un'economia programmata partecipata? Gli esempi di URSS, Cuba, Francia e Regno Unito, e il ruolo delle piccole imprese."
 date: 2025-02-06 19:50:12 +0100
 categories: [economia]
 tags: [privati,esproprio,indennizzo]

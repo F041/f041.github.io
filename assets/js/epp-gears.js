@@ -105,7 +105,7 @@ function init() {
 
   g.forEach((d) => {
     const ox = d.x - cx, oy = d.y - cy;
-    const geo = new THREE.ExtrudeGeometry(wheelShape(d.n, d.R), { depth: 0.2, bevelEnabled: false, curveSegments: 20 });
+    const geo = new THREE.ExtrudeGeometry(wheelShape(d.n, d.R), { depth: 0.2, bevelEnabled: false, curveSegments: 10 });
     geo.translate(0, 0, -0.1);
     const fill = new THREE.Mesh(geo, new THREE.MeshBasicMaterial({ color: PAPER, polygonOffset: true, polygonOffsetFactor: 1, polygonOffsetUnits: 1 }));
     d.lineMat = new THREE.LineBasicMaterial({ color: sepia.clone(), transparent: true, opacity: 0.5, depthWrite: false });

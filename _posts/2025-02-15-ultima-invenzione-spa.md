@@ -1,5 +1,6 @@
 --- 
 title: "L’ultima invenzione delle leggi per le imprese per il profitto" 
+description: "La Società per Azioni divide la proprietà in azioni ma lascia le decisioni a chi ha la maggioranza. Come funziona l'ultima invenzione dell'impresa privata."
 date: 2025-02-15 16:09:12 +0100 
 categories: [economia] 
 tags: [spa,grandi aziende] 

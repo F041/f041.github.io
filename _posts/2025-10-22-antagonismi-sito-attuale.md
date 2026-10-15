@@ -1,7 +1,8 @@
 ---
 title: "Antagonismi dell'attuale sito"
+description: "Un passo sugli antagonismi tra classi e sulla produttività del lavoro: perché con la grande industria una classe dominante diventa superflua."
 date: 2025-10-22 10:00:00 +0200
-categories: [Società, Economia]
+categories: [società, economia]
 tags: [antagonismo, classi, produttività, lavoro]
 ---
 

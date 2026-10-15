@@ -1,5 +1,6 @@
 ---
 title: "Waterfall vs Agile: due modi di pianificare l'economia"
+description: "Il modello a cascata e il metodo agile vengono dal software. Applicati all'economia spiegano perché il piano sovietico falliva e cosa propone questo sito."
 date: 2026-08-15 12:00:00 +0200
 categories: [storia, economia]
 tags: [urss, bilanci, pianificazione, agile, waterfall, storia]

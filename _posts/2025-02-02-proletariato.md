@@ -1,5 +1,6 @@
 ---
 title: Esiste il proletariato oggi?
+description: "Chi vive principalmente di salario oggi? Dall'origine latina della parola alle forme attuali del lavoro dipendente: chi è il proletariato nel presente."
 date: 2025-02-02 14:49:12 
 categories: [storia,lavoratori]
 tags: [proletariato,lavoratori,precari]

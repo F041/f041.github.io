@@ -1,5 +1,6 @@
 ---
 title: "Economia programmata privata: l'esempio dell'alimentazione"
+description: "Chi decide quanti polli allevare e a che prezzo venderli? La filiera del cibo è già pianificata, solo che a pianificarla sono i giganti dell'agroindustria."
 date: 2026-08-13 20:00:00 +0200
 categories: [economia]
 tags: [alimentazione, agroindustria, monopsonio, filiera, pianificazione, sovranità-alimentare]

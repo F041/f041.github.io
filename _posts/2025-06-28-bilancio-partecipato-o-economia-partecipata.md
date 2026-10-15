@@ -1,5 +1,6 @@
 ---
 title: "Bilancio partecipato o economia partecipata?"
+description: "Il bilancio partecipato decide come spendere le entrate, l'economia partecipata decide cosa produrre: la differenza tra la superficie e la radice."
 date: 2025-06-28
 categories: [economia]
 tags: [comuni,bilanci]

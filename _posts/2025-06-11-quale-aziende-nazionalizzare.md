@@ -1,8 +1,9 @@
 ---
 title: "Quali aziende nazionalizzare per una economia partecipata?"
+description: "Su circa un milione di imprese italiane le grandi sono 1.622: quali nazionalizzare per un'economia partecipata, e perché proprio quelle."
 date: 2025-06-11 14:09:12 +0100
 categories: [economia]
-tags: [“grandi aziende”]
+tags: [grandi aziende]
 ---
 
 Mentre l’economia attuale basata sui profitti nasce all’interno della società feudale e l’ha consumata dall’interno, eliminando i piccoli produttori delle arti e corporazioni, non si può dire lo stesso di economia programmata partecipata, a meno che non si vuole ripetere qualche esperimento fallito (es. Owenismo). Come già fatto presente, i vari pinco pallo srl generalmente [non creano danni alla collettività](https://f041.github.io/posts/ruolo-aziende-private/), a meno che non operano in settori a basso valore aggiunto come la ristorazione e l’agricoltura, quindi l’economia politica di questo progetto si concentra sul democratizzare i grandi perni dell’economia Italiana. Si tratta di [non meno di 1622 aziende](https://www.istat.it/it/files/2023/11/REPORTCensimprese.pdf) su circa 1 milione.

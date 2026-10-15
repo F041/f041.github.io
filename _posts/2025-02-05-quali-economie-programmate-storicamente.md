@@ -1,5 +1,6 @@
 ---
 title: Quali economie programmate sono esistite storicamente?
+description: "URSS, Francia, Italia, Jugoslavia: le principali economie programmate della storia, come pianificavano e quali problemi hanno incontrato."
 date: 2025-02-05 14:49:12 
 categories: [storia,economia]
 tags: [urss,francia,italia,iri,jugoslavia]

@@ -1,5 +1,6 @@
 --- 
 title: "Le tragedie del profitto: paradiso privato, inferno pubblico" 
+description: "Il profitto non è il male assoluto, ma le grandi aziende che lo inseguono hanno effetti globali. Il caso più tragico: l'industria tedesca del Novecento."
 date: 2025-02-09 12:09:12 +0100 
 categories: [storia,economia] 
 tags: [nazismo,germania,uk,usa] 

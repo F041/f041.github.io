@@ -1,5 +1,6 @@
 ---
 title: "Economia pianificata centralmente: la tecnica non risolve i problemi della natura della gestione"
+description: "I bilanci materiali dell'URSS spiegati con la matematica della scuola media, e perché il limite della pianificazione centralizzata era la qualità del dato."
 date: 2025-02-06 14:09:12 +0100
 categories: [storia, economia]
 tags: [urss, bilanci]

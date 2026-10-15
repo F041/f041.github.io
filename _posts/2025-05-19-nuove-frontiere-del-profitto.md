@@ -1,5 +1,6 @@
 --- 
 title: "Nuove frontiere del profitto e della miseria umana" 
+description: "Dal ciclo denaro-merce-denaro al denaro che produce denaro: criptovalute, intelligenza artificiale e lavoro nelle nuove frontiere del profitto."
 date: 2025-05-23 10:09:12 +0100 
 categories: [economia] 
 tags: [IA,profitto,capitale,lavoro,criptovalute,società,disuguaglianza]

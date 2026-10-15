@@ -1,5 +1,6 @@
 ---
 title: 'Dei numeri per avere impatto: dalla quantità alla qualità e viceversa'
+description: "Quante persone servono per cambiare le cose in Italia? Dai numeri delle cento maggiori aziende a quanti partecipanti servono al progetto."
 date: 2025-02-11 18:49:12 +0100
 categories: [economia,psicologia]
 tags: [grandi aziende,lavoro,organizzazioni]

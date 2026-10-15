@@ -1,5 +1,6 @@
 --- 
 title: "Economia programmata partecipata che produce per il profitto?" 
+description: "Ha senso un'economia programmata partecipata che produce per il profitto? Una risposta breve e una lunga, a partire dalla legge del valore."
 date: 2025-02-13 10:09:12 +0100 
 categories: [economia] 
 tags: [corea,grandi aziende,legge,valore,cogestione] 

@@ -1,5 +1,6 @@
 ---
 title: "DAO: partecipazione all'economia digitale o illusione di partecipazione?"
+description: "Le DAO promettono democrazia digitale su blockchain. Sono un'alternativa al modello del profitto o l'ennesima illusione di partecipazione?"
 date: 2025-05-30 10:00:00 +0100
 categories: [economia,tecnologia,democrazia]
 tags: [blockchain,partecipazione,decentralizzazione,profitto]

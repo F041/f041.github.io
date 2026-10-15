@@ -1,8 +1,9 @@
 --- 
 title: "Che ruolo dei partiti in una economia programmata partecipata?" 
+description: "Comitato d'affari, partito unico o scuola per chi lavora? Il ruolo dei partiti nell'economia di oggi, in quella pianificata e in quella partecipata."
 date: 2025-06-17 10:09:12 +0100 
 categories: [politica] 
-tags: [partito,] 
+tags: [partito]
 --- 
 
 Nell’economia corrente i partiti rappresentano i comitati d’affari delle grande aziende o dei grandi privati. In dei paesi, ad esempio l’Italia di Berlusconi, gli USA di Trump o la Russia di Putin, il partito dominante porta avanti interessi di una cerchia ristretta di persone, con più o meno rispetto per le istituzioni democratiche. Berlusconi primeggia rispetto gli altri due su questo fronte, e questo la dice lunga sul come stiamo messi globalmente.
