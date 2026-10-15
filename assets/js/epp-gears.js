@@ -20,11 +20,15 @@ const GEARS = [
 const MOD = 0.12;
 const TURN_MS = 5200;
 const SPEED = 0.22;
-const SEPIA = '#6B4F33';
-
-const css = getComputedStyle(document.documentElement);
-const PAPER = css.getPropertyValue('--epp-bg').trim() || '#F1F1EE';
-const ACCENT = css.getPropertyValue('--epp-accent').trim() || '#B83A22';
+// colori dal tema corrente (chiaro o scuro): riletti a ogni cambio di tema
+const readColors = () => {
+  const css = getComputedStyle(document.documentElement);
+  return {
+    paper: css.getPropertyValue('--epp-bg').trim() || '#F1F1EE',
+    accent: css.getPropertyValue('--epp-accent').trim() || '#B83A22',
+    line: css.getPropertyValue('--epp-gear-line').trim() || '#6B4F33'
+  };
+};
 
 const polar = (r, a) => [r * Math.cos(a), r * Math.sin(a)];
 
@@ -92,10 +96,12 @@ function init() {
   const cx = (minX + maxX) / 2, cy = (minY + maxY) / 2;
   const spanW = maxX - minX, spanH = maxY - minY;
 
-  const sepia = new THREE.Color(SEPIA);
-  const red = new THREE.Color(ACCENT);
-  const guideMat = new THREE.LineBasicMaterial({ color: SEPIA, transparent: true, opacity: 0.18, depthWrite: false });
-  const dashMat = new THREE.LineDashedMaterial({ color: SEPIA, transparent: true, opacity: 0.3, dashSize: 0.07, gapSize: 0.06, depthWrite: false });
+  const colors = readColors();
+  const sepia = new THREE.Color(colors.line);
+  const red = new THREE.Color(colors.accent);
+  const paperMat = new THREE.MeshBasicMaterial({ color: colors.paper, polygonOffset: true, polygonOffsetFactor: 1, polygonOffsetUnits: 1 });
+  const guideMat = new THREE.LineBasicMaterial({ color: colors.line, transparent: true, opacity: 0.18, depthWrite: false });
+  const dashMat = new THREE.LineDashedMaterial({ color: colors.line, transparent: true, opacity: 0.3, dashSize: 0.07, gapSize: 0.06, depthWrite: false });
   const seg = (pts, mat) => {
     const line = new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts.map(([x, y]) => new THREE.Vector3(x, y, 0.12))), mat);
     line.computeLineDistances();
@@ -107,7 +113,7 @@ function init() {
     const ox = d.x - cx, oy = d.y - cy;
     const geo = new THREE.ExtrudeGeometry(wheelShape(d.n, d.R), { depth: 0.2, bevelEnabled: false, curveSegments: 10 });
     geo.translate(0, 0, -0.1);
-    const fill = new THREE.Mesh(geo, new THREE.MeshBasicMaterial({ color: PAPER, polygonOffset: true, polygonOffsetFactor: 1, polygonOffsetUnits: 1 }));
+    const fill = new THREE.Mesh(geo, paperMat);
     d.lineMat = new THREE.LineBasicMaterial({ color: sepia.clone(), transparent: true, opacity: 0.5, depthWrite: false });
     const edges = new THREE.LineSegments(new THREE.EdgesGeometry(geo, 24), d.lineMat);
     edges.renderOrder = 2;
@@ -186,6 +192,19 @@ function init() {
     place(phi);
     renderer.render(scene, camera);
   };
+
+  // cambio di tema (pulsante del menu o impostazione del dispositivo): ricolora subito, anche in pausa
+  const applyTheme = () => {
+    const c = readColors();
+    sepia.set(c.line);
+    red.set(c.accent);
+    paperMat.color.set(c.paper);
+    guideMat.color.set(c.line);
+    dashMat.color.set(c.line);
+    paint(1);
+  };
+  new MutationObserver(applyTheme).observe(document.documentElement, { attributes: true, attributeFilter: ['data-mode'] });
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', applyTheme);
 
   const tick = (now) => {
     requestAnimationFrame(tick);

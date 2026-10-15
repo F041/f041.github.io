@@ -4,9 +4,11 @@
  * usate da _layouts/home.html, _includes/epp-header.html ed epp-footer.html.
  */
 
-/* --- token --- */
+/* --- token ---
+   Selettore con la stessa specificità di quelli di Chirpy (html:not([data-mode]) e html[data-mode=…]):
+   venendo dopo, vince sia quando il tema segue il dispositivo sia quando è scelto col pulsante. */
 
-html,
+html:not([data-mode]),
 html[data-mode] {
   --epp-bg: #f1f1ee;
   --epp-surface: #f7f7f4;
@@ -16,9 +18,22 @@ html[data-mode] {
   --epp-muted: #55595e;
   --epp-rule: #d3d3cd;
   --epp-rule-strong: #c9c9c2;
-  --epp-accent: #b83a22;
+  --epp-accent: #b83a22; /* testo e linee in rosso */
   --epp-accent-hover: #9a2f1b;
+  --epp-accent-fill: #b83a22; /* superfici rosse con testo bianco */
+  --epp-accent-fill-hover: #9a2f1b;
+  --epp-on-accent: #fff;
   --epp-highlight: #f2d555;
+  --epp-body: #1e2124; /* testo degli articoli */
+  --epp-ink-hover: #2a2d31;
+  --epp-on-ink-muted: #c9cac4;
+  --epp-veil: rgb(241 241 238 / 85%);
+  --epp-code-bg: rgb(21 23 26 / 6%);
+  --epp-gear-line: #6b4f33;
+  /* il footer è scuro in entrambi i temi */
+  --epp-footer-bg: #15171a;
+  --epp-footer-text: #f1f1ee;
+  --epp-footer-muted: #c9cac4;
 
   --epp-font-display: 'Archivo', system-ui, sans-serif;
   --epp-font-serif: 'Source Serif 4', Georgia, serif;
@@ -59,7 +74,76 @@ html[data-mode] {
   --timeline-color: var(--epp-rule);
   --timeline-node-bg: var(--epp-rule-strong);
   --highlight-bg-color: var(--epp-surface);
-  --inline-code-bg: rgb(21 23 26 / 6%);
+  --inline-code-bg: var(--epp-code-bg);
+}
+
+/* --- tema scuro ---
+   Si attiva col pulsante nel menu (data-mode="dark") o, se il lettore non ha scelto,
+   con l'impostazione del dispositivo. Contrasti verificati su fondo #141518:
+   testo #c8c9c3 ≈ 11:1, secondario #9b9d98 ≈ 6.6:1, rosso dei testi #ec7a5f ≈ 6.5:1, testo sull'evidenziatore #6a510b ≈ 5:1;
+   il bianco sul rosso di riempimento #b83a22 resta ≈ 5.6:1. */
+@mixin epp-dark {
+  --epp-bg: #141518;
+  --epp-surface: #1b1d21;
+  --epp-band: #212328;
+  --epp-ink: #ecece7;
+  --epp-text: #c8c9c3;
+  --epp-muted: #9b9d98;
+  --epp-rule: #2d3035;
+  --epp-rule-strong: #3c4046;
+  --epp-accent: #ec7a5f;
+  --epp-accent-hover: #f39a83;
+  --epp-highlight: #6a510b;
+  --epp-body: #dcdcd6;
+  --epp-ink-hover: #d4d4ce;
+  --epp-on-ink-muted: #4a4c50;
+  --epp-veil: rgb(20 21 24 / 85%);
+  --epp-code-bg: rgb(236 236 231 / 8%);
+  --epp-gear-line: #b39272;
+  --epp-footer-bg: #0c0d0f;
+}
+
+html[data-mode='dark'] {
+  @include epp-dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-mode]) {
+    @include epp-dark;
+  }
+}
+
+/* pulsante del tema nel menu: mostra l'icona del tema in cui si passa */
+.epp-theme-toggle {
+  width: 44px;
+  padding: 0 !important;
+  justify-content: center;
+
+  .epp-icon-sun {
+    display: none;
+  }
+}
+
+html[data-mode='dark'] .epp-theme-toggle {
+  .epp-icon-sun {
+    display: block;
+  }
+
+  .epp-icon-moon {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-mode]) .epp-theme-toggle {
+    .epp-icon-sun {
+      display: block;
+    }
+
+    .epp-icon-moon {
+      display: none;
+    }
+  }
 }
 
 /* --- base --- */
@@ -207,8 +291,8 @@ input:focus-visible {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--epp-accent);
-  color: #fff;
+  background: var(--epp-accent-fill);
+  color: var(--epp-on-accent);
   font-family: var(--epp-font-mono);
   font-size: 12px;
   font-weight: 500;
@@ -321,11 +405,11 @@ input:focus-visible {
 }
 
 .epp-btn--accent {
-  background: var(--epp-accent);
-  color: #fff !important;
+  background: var(--epp-accent-fill);
+  color: var(--epp-on-accent) !important;
 
   &:hover {
-    background: var(--epp-accent-hover);
+    background: var(--epp-accent-fill-hover);
   }
 }
 
@@ -427,7 +511,7 @@ input:focus-visible {
   padding: 0 14px;
   border: 1px solid var(--epp-rule-strong);
   border-radius: 2px;
-  background: rgb(241 241 238 / 85%);
+  background: var(--epp-veil);
   color: var(--epp-ink);
   font-family: var(--epp-font-mono);
   font-size: 14px;
@@ -678,8 +762,8 @@ input:focus-visible {
   letter-spacing: 0.02em;
   word-spacing: normal;
   padding: 3px 8px;
-  background: var(--epp-accent);
-  color: #fff;
+  background: var(--epp-accent-fill);
+  color: var(--epp-on-accent);
 }
 
 /* ultimi articoli */
@@ -931,7 +1015,7 @@ input:focus-visible {
   font-family: var(--epp-font-serif);
   font-size: 1.2rem;
   line-height: 1.65;
-  color: #1e2124;
+  color: var(--epp-body);
   word-spacing: normal;
   max-width: 42rem;
 
@@ -1055,7 +1139,7 @@ input:focus-visible {
   }
 
   &.is-current::before {
-    background: var(--epp-accent);
+    background: var(--epp-accent-fill);
   }
 
   &:hover::before {
@@ -1111,13 +1195,13 @@ input:focus-visible {
   color: var(--epp-bg) !important;
 
   &:hover {
-    background: #2a2d31;
+    background: var(--epp-ink-hover);
     color: var(--epp-bg) !important;
   }
 
   .epp-path-nav__kicker,
   .epp-path-nav__desc {
-    color: #c9cac4;
+    color: var(--epp-on-ink-muted);
   }
 }
 
@@ -1144,7 +1228,125 @@ input:focus-visible {
   font-size: 15px;
 }
 
+/* "Continua a leggere" di Chirpy, nello stile A */
+#related-posts {
+  > h3 {
+    margin-top: 1rem;
+    font-family: var(--epp-font-display);
+    font-stretch: 85%;
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-transform: none;
+    color: var(--epp-ink);
+  }
+
+  .card {
+    border: 0 !important;
+    border-top: 1px solid var(--epp-ink) !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background: var(--epp-band) !important;
+    }
+  }
+
+  .card-body {
+    padding: 16px 4px 12px;
+  }
+
+  time {
+    font-family: var(--epp-font-mono);
+    font-size: 14px;
+    word-spacing: normal;
+    color: var(--epp-muted);
+  }
+
+  h4 {
+    font-family: var(--epp-font-display);
+    font-stretch: 85%;
+    font-weight: 700;
+    font-size: 1.15rem;
+    line-height: 1.2;
+    color: var(--epp-ink);
+    white-space: normal;
+  }
+
+  p {
+    font-family: var(--epp-font-serif);
+    font-size: 15px;
+    line-height: 1.45;
+    color: var(--epp-muted);
+    -webkit-line-clamp: 3;
+  }
+}
+
+/* "Meno recenti / Più recenti" di Chirpy: due riquadri come quelli del percorso */
+.post-navigation {
+  gap: 16px;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+
+  .btn {
+    flex: 1 1 0;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 18px 22px !important;
+    border: 1px solid var(--epp-rule-strong) !important;
+    border-radius: 0 !important;
+    background: transparent;
+    text-align: left;
+    color: var(--epp-ink) !important;
+    transition: background-color 0.2s ease;
+
+    &:last-child {
+      text-align: right;
+    }
+
+    &::before {
+      font-family: var(--epp-font-mono);
+      font-size: 13px;
+      text-transform: none;
+      word-spacing: normal;
+      color: var(--epp-muted);
+    }
+
+    &:hover:not(.disabled) {
+      background: var(--epp-band);
+      color: var(--epp-ink) !important;
+
+      &::before {
+        color: var(--epp-muted);
+      }
+    }
+
+    &.disabled {
+      border-style: dashed !important;
+      color: var(--epp-muted) !important;
+    }
+
+    p {
+      margin: 0;
+      font-family: var(--epp-font-display);
+      font-stretch: 85%;
+      font-weight: 700;
+      font-size: 1.05rem;
+      line-height: 1.25;
+      white-space: normal;
+    }
+  }
+}
+
 /* indice a destra */
+/* la sfumatura fissa in fondo allo schermo di Chirpy finirebbe sopra il footer scuro */
+#toc-wrapper::after {
+  display: none;
+}
+
 #toc-wrapper {
   border-left: 0;
   font-family: var(--epp-font-display);
@@ -1183,8 +1385,8 @@ input:focus-visible {
   height: auto !important;
   padding: 0 !important;
   border-top: 0;
-  background: var(--epp-ink);
-  color: #c9cac4;
+  background: var(--epp-footer-bg);
+  color: var(--epp-footer-muted);
   font-size: 1rem;
   transition: none;
 
@@ -1215,7 +1417,7 @@ input:focus-visible {
   line-height: 1;
   letter-spacing: -0.01em;
   word-spacing: 0.13em;
-  color: var(--epp-bg);
+  color: var(--epp-footer-text);
 }
 
 .epp-footer__meta {
@@ -1225,7 +1427,7 @@ input:focus-visible {
   word-spacing: normal;
 
   a {
-    color: #c9cac4 !important;
+    color: var(--epp-footer-muted) !important;
   }
 }
 
@@ -1243,7 +1445,7 @@ input:focus-visible {
     display: inline-flex;
     align-items: center;
     min-height: 44px;
-    color: var(--epp-bg) !important;
+    color: var(--epp-footer-text) !important;
     text-decoration: underline;
     text-underline-offset: 4px;
     border: 0 !important;
@@ -1252,7 +1454,7 @@ input:focus-visible {
 
 /* hover dei link: Chirpy forza un arancione con !important e un bordo sotto */
 .epp-footer a:hover {
-  color: #fff !important;
+  color: var(--epp-footer-text) !important;
   border-bottom: 0 !important;
 }
 
