@@ -11,7 +11,7 @@ Storicamente, le economie programmate o pianificate si sono sviluppate in divers
 
 ## Economie pianificate centralmente, o di comando o amministrata centralmente
 In unione sovietica (URSS) troviamo il caso più noto, basato sui piani quinquennali introdotti negli anni '20. La burocrazia creava numerose inefficienze che tentava di risolvere con riforme zig zag. 
-Dal punto di vista tecnico la pianificazione avveniva tramite i bilanci materiali che, nonostante l'uso dei calcolatori ed innovazioni matematicatiche per la pianificazione, esplosero presto di complessità. Prima della complessità abbiamo il problema della qualità del dato in input: in una società dove la burocrazia governava col terrore (gulag) alternato ad incentivi materiali (stacanovismo), questo portava a gravi distorsioni.
+Dal punto di vista tecnico la pianificazione avveniva tramite i bilanci materiali che, nonostante l'uso dei calcolatori ed innovazioni matematiche per la pianificazione, esplosero presto di complessità. Prima della complessità abbiamo il problema della qualità del dato in input: in una società dove la burocrazia governava col terrore (gulag) alternato ad incentivi materiali (stacanovismo), questo portava a gravi distorsioni.
 
 ## Pianificazione indicativa
 Questo modello non impone direttive rigide ma fornisce linee guida per orientare l'economia. Viene spesso utilizzato in economie di mercato miste.

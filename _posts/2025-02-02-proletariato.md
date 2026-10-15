@@ -14,7 +14,7 @@ parola latina che significa "il cui unico patrimonio era costituto dalla prole (
 L'uso storico di quella parola fa ridere nel presente, visto che, ad esempio l'Italia, ha un numero medio di figli per donna pari a 1,25. Ben lontano dal 2,1 per mantenere una popolazione stabile, con tutte le conseguenze del caso. 
 
 ## Riflessione storica-economica
-se con proletariato intendiamo coloro che vivono **principalemnte** del salario, che deriva dall'offire forza-lavoro, ad aziende pubbliche o private il discorso cambia ma diventa troppo ampio. Questa definizione sembra mettere sullo stesso piano dipendente in sede, dipendente in telelavoro, commerciale con partita IVA e dipendente pubblico delle poste. Mischia anche lavoro ad obiettivi, in alcuni casi il nuovo cottimo, e lavoro pagato per il numero di ore alla postazione di lavoro (ufficio, laboratorio, sportello, cassa, etc.)
+se con proletariato intendiamo coloro che vivono **principalmente** del salario, che deriva dall'offire forza-lavoro, ad aziende pubbliche o private il discorso cambia ma diventa troppo ampio. Questa definizione sembra mettere sullo stesso piano dipendente in sede, dipendente in telelavoro, commerciale con partita IVA e dipendente pubblico delle poste. Mischia anche lavoro ad obiettivi, in alcuni casi il nuovo cottimo, e lavoro pagato per il numero di ore alla postazione di lavoro (ufficio, laboratorio, sportello, cassa, etc.)
 
 ## Una definizione
 proviamo ora a creare una lista di caratteristiche 
