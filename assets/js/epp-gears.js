@@ -155,8 +155,25 @@ function init() {
     camera.updateProjectionMatrix();
   };
 
+  // pausa: parte ferma con "riduci movimento", altrimenti si ferma col pulsante (WCAG 2.2.2)
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let paused = reduce;
   let drv = 0, phi = 0, vel = SPEED / Math.abs(g[0].k), last = performance.now(), visible = true, t = 0;
+
+  const toggle = document.getElementById('epp-gears-toggle');
+  const syncToggle = () => {
+    if (!toggle) return;
+    toggle.classList.toggle('is-paused', paused);
+    toggle.querySelector('.epp-pause__label').textContent = paused ? 'Avvia animazione' : 'Ferma animazione';
+  };
+  if (toggle) {
+    toggle.hidden = false;
+    syncToggle();
+    toggle.addEventListener('click', () => {
+      paused = !paused;
+      syncToggle();
+    });
+  }
 
   const paint = (dt) => {
     const e = Math.min(1, dt * 2.5);
@@ -172,9 +189,10 @@ function init() {
 
   const tick = (now) => {
     requestAnimationFrame(tick);
-    if (!visible) { last = now; return; }
     const dt = Math.min(0.05, (now - last) / 1000);
     last = now;
+    // in pausa o fuori schermo: niente movimento e niente lavoro per la GPU
+    if (!visible || paused) return;
     t += dt;
     // cambia chi spinge: tutta la macchina si ricalibra sulla sua velocità
     const target = SPEED / Math.abs(g[drv].k);
@@ -184,15 +202,15 @@ function init() {
   };
 
   resize();
-  new ResizeObserver(() => { resize(); if (reduce) paint(1); }).observe(canvas);
+  new ResizeObserver(() => { resize(); paint(1); }).observe(canvas);
   new IntersectionObserver((es) => { visible = es[0].isIntersecting; }).observe(canvas);
   setInterval(() => {
+    if (paused) return;
     drv = (drv + 1 + Math.floor(Math.random() * (g.length - 1))) % g.length;
-    if (reduce) paint(1);
   }, TURN_MS);
 
-  if (reduce) paint(1);
-  else requestAnimationFrame(tick);
+  paint(1);
+  requestAnimationFrame(tick);
 }
 
 if (canvas) init();

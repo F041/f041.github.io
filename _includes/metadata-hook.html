@@ -6,47 +6,59 @@
 <!-- ===== Custom metadata hook: tooltip del glossario ===== -->
 
 <style>
+  /* termine del glossario: pulsante con pennarello giallo e sottolineatura tratteggiata,
+     diverso dai link normali (sottolineatura piena) */
   .glossary-tip {
-    cursor: help;
-    position: relative;
-    color: inherit;
-    background: linear-gradient(transparent 60%, var(--epp-highlight, #f2d555) 60%);
+    display: inline;
+    margin: 0;
     padding: 0 1px;
-  }
-  .glossary-tip::after {
-    content: attr(data-def);
-    position: absolute;
-    left: 50%;
-    bottom: calc(100% + 8px);
-    transform: translateX(-50%) translateY(4px);
-    width: max-content;
-    max-width: 280px;
-    padding: 0.5rem 0.75rem;
+    border: 0;
+    border-bottom: 1px dotted var(--epp-ink, #15171a);
     border-radius: 0;
+    background: linear-gradient(transparent 62%, var(--epp-highlight, #f2d555) 62%);
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    touch-action: manipulation;
+  }
+  .glossary-tip[aria-expanded='true'] {
+    background: var(--epp-highlight, #f2d555);
+  }
+  .glossary-def {
+    display: block;
+    margin: 0.75rem 0 1.25rem;
+    padding: 14px 18px;
     background: var(--epp-ink, #15171a);
     color: var(--epp-bg, #f1f1ee);
-    border: 0;
     font-family: var(--epp-font-display, sans-serif);
     font-style: normal;
-    font-size: 0.85rem;
-    line-height: 1.45;
-    text-align: left;
-    font-weight: 400;
-    white-space: normal;
-    opacity: 0;
-    pointer-events: none;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.28);
-    transition: opacity 0.15s ease, transform 0.15s ease;
-    z-index: 20;
+    font-size: 1rem;
+    line-height: 1.5;
+    word-spacing: 0.04em;
   }
-  .glossary-tip:hover::after,
-  .glossary-tip:focus::after {
-    opacity: 1;
-    transform: translateX(-50%) translateY(0);
+  .glossary-def__label {
+    display: block;
+    margin-bottom: 4px;
+    font-family: var(--epp-font-mono, monospace);
+    font-size: 0.75rem;
+    color: var(--epp-highlight, #f2d555);
+  }
+  .glossary-hint {
+    margin: 0 0 2rem;
+    padding: 12px 16px;
+    background: var(--epp-band, #e6e6e1);
+    font-family: var(--epp-font-display, sans-serif);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--epp-text, #2c2f33);
+  }
+  .content .glossary-def a:not(.img-link) {
+    color: var(--epp-bg, #f1f1ee);
+    text-decoration-color: currentColor;
   }
 </style>
 
-<script id="glossary-data" type="application/json">
+<script id="glossary-data" type="application/json" data-glossary-url="{{ '/glossario/' | relative_url }}">
 {{ site.data.glossary | jsonify }}
 </script>
 <script defer src="{{ '/assets/js/glossary-tooltip.js' | relative_url }}"></script>

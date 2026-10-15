@@ -40,6 +40,10 @@ layout: compress
             </main>
           </div>
         {% else %}
+          {% if page.layout == 'post' %}
+            {% include epp-percorso.html pos='top' %}
+          {% endif %}
+
           <div class="row flex-grow-1">
             <main id="epp-main" aria-label="Main Content" class="col-12 col-lg-11 col-xl-9 px-md-4">
               {% if layout.refactor or layout.layout == 'default' %}
@@ -62,6 +66,14 @@ layout: compress
               {% endfor %}
             </aside>
           </div>
+
+          {% if page.layout == 'post' %}
+            <div class="row">
+              <div class="col-12 col-lg-11 col-xl-9 px-md-4">
+                {% include epp-percorso.html pos='bottom' %}
+              </div>
+            </div>
+          {% endif %}
 
           <div class="row">
             <!-- tail -->

@@ -3,6 +3,7 @@
 icon: fas fa-info-circle
 order: 1
 toc: true
+title: Chi siamo
 ---
 
 ## A chi si rivolge?

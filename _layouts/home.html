@@ -8,6 +8,9 @@ layout: default
 {% assign visibili = site.posts | where_exp: 'p', 'p.hidden != true' %}
 {% assign fissati = site.posts | where: 'pin', 'true' %}
 {% assign recenti = visibili | where_exp: 'p', 'p.pin != true' %}
+{% assign percorsi_primi = site.data.percorsi | where_exp: 'p', 'p.badge' %}
+{% assign percorsi_altri = site.data.percorsi | where_exp: 'p', 'p.badge == nil' %}
+{% assign percorsi_home = percorsi_primi | concat: percorsi_altri %}
 
 <section class="epp-hero" aria-label="Apertura">
   <canvas id="epp-gears" class="epp-hero__gears" aria-hidden="true"></canvas>
@@ -18,13 +21,18 @@ layout: default
       <p class="epp-lede">Pianificazione e partecipazione attiva di chi lavora, per produrre secondo i bisogni umani anziché secondo i profitti. Qui trovi articoli, percorsi di lettura e un glossario per orientarti.</p>
       <div class="epp-actions">
         <a class="epp-btn epp-btn--accent epp-btn--lg" href="{{ '/percorsi/' | relative_url }}">
-          Trova il tuo percorso
+          Scegli il tuo percorso di lettura
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
-        <a class="epp-textlink" href="{{ '/percorsi/' | relative_url }}#{{ site.data.percorsi[0].ancora }}">Prima volta qui? Parti da zero</a>
+        <a class="epp-textlink" href="{{ '/percorsi/' | relative_url }}#{{ percorsi_primi[0].ancora }}">Prima volta qui? Parti da zero</a>
       </div>
     </div>
   </div>
+  <button type="button" id="epp-gears-toggle" class="epp-pause" hidden>
+    <svg class="epp-pause__icon-pause" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="5" y="4" width="5" height="16"/><rect x="14" y="4" width="5" height="16"/></svg>
+    <svg class="epp-pause__icon-play" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4l13 8-13 8z"/></svg>
+    <span class="epp-pause__label">Ferma animazione</span>
+  </button>
 </section>
 
 <section class="epp-section" aria-labelledby="h-percorsi">
@@ -35,7 +43,7 @@ layout: default
       <p class="epp-intro">Non serve sapere tutto subito. Ogni percorso è una sequenza ordinata di articoli, pensata per il tuo punto di partenza.</p>
     </div>
     <ul class="epp-rows">
-      {% for p in site.data.percorsi %}
+      {% for p in percorsi_home %}
         <li>
           <a class="epp-row" href="{{ '/percorsi/' | relative_url }}#{{ p.ancora }}">
             <span class="epp-row__body">
@@ -45,7 +53,7 @@ layout: default
               </span>
               <span class="epp-row__desc">{{ p.desc }}</span>
             </span>
-            <span class="epp-row__meta">{{ p.articoli }} articoli</span>
+            <span class="epp-row__meta">{{ p.passi.size }} articoli</span>
             <svg class="epp-arr" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
           </a>
         </li>
@@ -61,7 +69,7 @@ layout: default
         <p class="epp-kicker">02 / Articoli</p>
         <h2 id="h-articoli" class="epp-h2">Ultimi usciti</h2>
       </div>
-      <a class="epp-textlink" href="{{ '/archives/' | relative_url }}">Archivio completo · {{ visibili.size }} articoli</a>
+      <a class="epp-textlink" href="{{ '/archives/' | relative_url }}">Tutti gli articoli ({{ visibili.size }})</a>
     </div>
 
     <div class="epp-latest">
@@ -92,7 +100,7 @@ layout: default
 
       {% if fissati.size > 0 %}
         <aside class="epp-pinned" aria-labelledby="h-fissati">
-          <h3 id="h-fissati" class="epp-label">Da leggere per primi</h3>
+          <h3 id="h-fissati" class="epp-pinned__title">Da leggere per primi</h3>
           <ol>
             {% for post in fissati %}
               <li>
@@ -134,9 +142,9 @@ layout: default
     <div class="epp-split__head">
       <p class="epp-kicker">04 / Partecipa</p>
       <h2 id="h-gdl" class="epp-h2">Sei gruppi di lavoro: scegli dove dare una mano</h2>
-      <p class="epp-intro">Puoi anche contribuire con una donazione, o mettendo a disposizione server e spazi.</p>
+      <p class="epp-intro">Bastano 1-3 ore a settimana. Se non hai tempo, puoi <a href="{{ '/partecipa/' | relative_url }}">contribuire in altri modi</a>: una donazione, un server, uno spazio.</p>
       <a class="epp-btn epp-btn--ink epp-btn--lg" href="{{ '/partecipa/' | relative_url }}">
-        Iscriviti a un GdL
+        Iscriviti a un gruppo di lavoro
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </a>
     </div>
@@ -145,7 +153,7 @@ layout: default
       <div><dt>Arte</dt><dd>La poetica del futuro: musica, disegno, videogiochi. Anche un nuovo logo</dd></div>
       <div><dt>Legale</dt><dd>Supporto e consulenza</dd></div>
       <div><dt>Amministrativo</dt><dd>Finanze e amministrazione</dd></div>
-      <div><dt>Istruzione</dt><dd>Percorsi formativi su misura per ogni GdL</dd></div>
+      <div><dt>Istruzione</dt><dd>Percorsi formativi su misura per ogni gruppo</dd></div>
       <div><dt>Tecnologia</dt><dd>Infrastruttura informatica, e non solo</dd></div>
     </dl>
   </div>

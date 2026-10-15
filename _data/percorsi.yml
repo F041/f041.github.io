@@ -1,31 +1,164 @@
-# Percorsi di lettura mostrati in homepage.
-# `ancora` è l'id del titolo corrispondente in _tabs/percorsi.md (generato da kramdown).
-- nome: Da zero
-  desc: I concetti essenziali, uno dietro l'altro, senza saltare
-  articoli: 6
-  ancora: da-zero-non-sai-ancora-nulla-del-progetto
-  badge: Prima volta qui
-- nome: Chi lavora nell'informatica
-  desc: Progetto, iterazione, qualità del dato, costo marginale
-  articoli: 5
+# Percorsi di lettura: unica fonte per la pagina /percorsi/, la homepage e la barra del percorso negli articoli.
+# - id: usato nei link (?percorso=id) per ricordare in quale percorso si sta leggendo
+# - ancora: l'id del titolo nella pagina /percorsi/ (generato da kramdown dal campo `titolo`)
+# - passi: gli articoli in ordine; `testo` è il testo del link, `desc` la spiegazione (accetta markdown)
+# L'ordine qui è quello della pagina /percorsi/; in homepage il percorso con `badge` va per primo.
+
+- id: informatica
+  nome: Chi lavora nell'informatica
+  titolo: Per chi lavora nell'informatica
   ancora: per-chi-lavora-nellinformatica
-- nome: Chi lavora nella pubblica amministrazione
-  desc: "Conosci già la pianificazione: conta chi decide"
-  articoli: 5
+  desc: Progetto, iterazione, qualità del dato, costo marginale
+  intro: "Ti occupi di software, IA, dati, blockchain. I concetti che usi ogni giorno (progetto, iterazione, qualità del dato, costo marginale) sono la chiave per capire il modello."
+  passi:
+    - url: /posts/waterfall-vs-agile-economia/
+      testo: "Waterfall vs Agile: due modi di pianificare l'economia"
+      desc: la tua esperienza nei progetti software spiegata con l'economia.
+    - url: /posts/economia-amministrata/
+      testo: Economia amministrata
+      desc: quando la pianificazione ignora il dato reale.
+    - url: /posts/dao-democrazia-digitale/
+      testo: "DAO: partecipazione all'economia digitale o illusione?"
+      desc: "blockchain e token: cosa promettono davvero."
+    - url: /posts/economia-programmata-partecipata-profitto/
+      testo: Economia programmata partecipata che produce per il profitto?
+      desc: la *legge del valore* che nemmeno un algoritmo può fermare.
+    - url: /posts/nuove-frontiere-del-profitto/
+      testo: Nuove frontiere del profitto
+      desc: IA, capitale e disuguaglianza oggi.
+
+- id: pubblica-amministrazione
+  nome: Chi lavora nella pubblica amministrazione
+  titolo: Per chi lavora nella pubblica amministrazione
   ancora: per-chi-lavora-nella-pubblica-amministrazione
-- nome: Chi è immigrato e lavora in Italia
-  desc: Contratti e garanzie valgono quando ci si organizza
-  articoli: 4
+  desc: "Conosci già la pianificazione: conta chi decide"
+  intro: "Conosci già la pianificazione: la tua esperienza la rende migliore o peggiore a seconda di *chi* decide."
+  passi:
+    - url: /posts/economia-amministrata/
+      testo: Economia amministrata
+      desc: pianificare senza partecipazione, il caso che già conosci.
+    - url: /posts/quale-aziende-nazionalizzare/
+      testo: Quale aziende nazionalizzare
+      desc: dove ha senso l'intervento pubblico.
+    - url: /posts/bilancio-partecipato-o-economia-partecipata/
+      testo: Bilancio partecipato o economia partecipata?
+      desc: perché decidere come spendere non basta.
+    - url: /posts/ruolo-aziende-private/
+      testo: Ruolo delle aziende private
+      desc: che spazio resta al privato nel modello.
+    - url: /posts/economia-programmata-partecipata-profitto/
+      testo: Economia programmata partecipata che produce per il profitto?
+      desc: il cuore del modello.
+
+- id: immigrati
+  nome: Chi è immigrato e lavora in Italia
+  titolo: Per chi è immigrato e lavora in Italia
   ancora: per-chi-è-immigrato-e-lavora-in-italia
-- nome: Studenti
-  desc: Dai fondamentali ai temi di oggi, al tuo ritmo
-  articoli: 5
+  desc: Contratti e garanzie valgono quando ci si organizza
+  intro: "La tua storia di impegno e mobilità è una leva del cambiamento: hai visto da vicino quali contratti e garanzie valgono solo quando la forza-lavoro si organizza."
+  passi:
+    - url: /posts/proletariato/
+      testo: Il proletariato
+      desc: partire dal nome, e da chi lo porta.
+    - url: /posts/i-numeri-per-avere-impatto/
+      testo: I numeri per avere impatto
+      desc: quanti servono perché il modello funzioni.
+    - url: /posts/ruolo-partito/
+      testo: Il ruolo del partito
+      desc: come si costruisce una forza collettiva.
+    - url: /posts/economia-programmata-partecipata-profitto/
+      testo: Economia programmata partecipata che produce per il profitto?
+      desc: il modello che dà valore al lavoro.
+
+- id: studenti
+  nome: Studenti
+  titolo: Per gli studenti
   ancora: per-gli-studenti
-- nome: Piccolo commerciante
-  desc: Il modello visto dal tuo bancone
-  articoli: 4
+  desc: Dai fondamentali ai temi di oggi, al tuo ritmo
+  intro: Sei il futuro di questo progetto. Qui puoi partire dai fondamentali e arrivare ai temi più attuali, al tuo ritmo.
+  passi:
+    - url: /posts/quali-economie-programmate-storicamente/
+      testo: Quali economie programmate nella storia
+      desc: "URSS, Francia, Italia, Jugoslavia: un riepilogo utile."
+    - url: /posts/economia-programmata-partecipata-profitto/
+      testo: Economia programmata partecipata che produce per il profitto?
+      desc: "i concetti di base: valore, prezzo, legge del valore."
+    - url: /posts/tragedie-del-profitto/
+      testo: Le tragedie del profitto
+      desc: un caso storico estremo da cui trarre lezioni.
+    - url: /posts/nuove-frontiere-del-profitto/
+      testo: Nuove frontiere del profitto
+      desc: IA, criptovalute e disuguaglianza di oggi.
+    - url: /posts/siete-comunist/
+      testo: Siete comunisti?
+      desc: per rispondere (a te stesso e agli altri).
+
+- id: commercianti
+  nome: Piccolo commerciante
+  titolo: Per il piccolo commerciante
   ancora: per-il-piccolo-commerciante
-- nome: Piccolo imprenditore
-  desc: "Costi, margini, filiere: ti riguarda più di quanto pensi"
-  articoli: 5
+  desc: Il modello visto dal tuo bancone
+  intro: 'Non sei la "grande azienda": e proprio per questo capisci la differenza tra produrre per i bisogni e produrre per il profitto di pochi.'
+  passi:
+    - url: /posts/ruolo-aziende-private/
+      testo: Ruolo delle aziende private
+      desc: che posto ha chi gestisce un'attività propria.
+    - url: /posts/economia-programmata-privata-esempio-alimentazione/
+      testo: "Economia programmata privata: l'esempio dell'alimentazione"
+      desc: la filiera del cibo, dalla tua bottega in giù.
+    - url: /posts/tragedie-del-profitto/
+      testo: Le tragedie del profitto
+      desc: quando le grandi aziende dettano le regole.
+    - url: /posts/economia-programmata-partecipata-profitto/
+      testo: Economia programmata partecipata che produce per il profitto?
+      desc: il modello visto dal tuo bancone.
+
+- id: imprenditori
+  nome: Piccolo imprenditore
+  titolo: Per il piccolo imprenditore
   ancora: per-il-piccolo-imprenditore
+  desc: "Costi, margini, filiere: ti riguarda più di quanto pensi"
+  intro: "Gestisci già una produzione: sai cosa sono costi, margini e quote di mercato. Il modello ti riguarda più di quanto pensi."
+  passi:
+    - url: /posts/ruolo-aziende-private/
+      testo: Ruolo delle aziende private
+      desc: il privato dentro il modello, senza espropri ideologici.
+    - url: /posts/ultima-invenzione-spa/
+      testo: "L'ultima invenzione: la S.p.A."
+      desc: come funziona (e chi decide) nella grande azienda.
+    - url: /posts/economia-programmata-privata-esempio-alimentazione/
+      testo: "Economia programmata privata: l'esempio dell'alimentazione"
+      desc: filiera e monopsonio dal tuo punto di vista.
+    - url: /posts/i-numeri-per-avere-impatto/
+      testo: I numeri per avere impatto
+      desc: 'le dimensioni contano: quanto è grande "abbastanza".'
+    - url: /posts/economia-programmata-partecipata-profitto/
+      testo: Economia programmata partecipata che produce per il profitto?
+      desc: il modello da imprenditore.
+
+- id: da-zero
+  nome: Da zero
+  titolo: Da zero (non sai ancora nulla del progetto)
+  ancora: da-zero-non-sai-ancora-nulla-del-progetto
+  desc: I concetti essenziali, uno dietro l'altro, senza saltare
+  badge: Prima volta qui
+  intro: "Se sei qui per la prima volta, parti da qui: i concetti essenziali, uno dietro l'altro, senza saltare."
+  passi:
+    - url: /posts/economia-programmata-partecipata-profitto/
+      testo: Economia programmata partecipata che produce per il profitto?
+      desc: "il cuore: valore, prezzo, legge del valore."
+    - url: /posts/quali-economie-programmate-storicamente/
+      testo: Quali economie programmate nella storia
+      desc: cosa è già stato provato.
+    - url: /posts/economia-amministrata/
+      testo: Economia amministrata
+      desc: perché la pianificazione da sola non basta.
+    - url: /posts/ruolo-aziende-private/
+      testo: Ruolo delle aziende private
+      desc: cosa resta al privato.
+    - url: /posts/bilancio-partecipato-o-economia-partecipata/
+      testo: Bilancio partecipato o economia partecipata?
+      desc: la differenza che fa il modello.
+    - url: /posts/i-numeri-per-avere-impatto/
+      testo: I numeri per avere impatto
+      desc: e ora, come si parte.

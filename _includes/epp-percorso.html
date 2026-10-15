@@ -1,0 +1,103 @@
+{% comment %}
+  Barra del percorso di lettura negli articoli (stile A.1).
+  include.pos = 'top'    → striscia sopra l'articolo: percorso, segmenti cliccabili, "articolo 2 di 5"
+  include.pos = 'bottom' → precedente e prossimo nel percorso, in fondo all'articolo
+  Un articolo può stare in più percorsi: si generano tutti e lo script tiene visibile quello scelto
+  (?percorso=id nell'indirizzo, poi l'ultimo percorso scelto, poi il primo). Senza JavaScript resta il primo.
+{% endcomment %}
+
+{% assign epp_first = true %}
+{% for p in site.data.percorsi %}
+  {% assign idx = 0 %}
+  {% for s in p.passi %}
+    {% if s.url == page.url %}{% assign idx = forloop.index %}{% endif %}
+  {% endfor %}
+
+  {% if idx > 0 %}
+    {% assign n = p.passi.size %}
+
+    {% if include.pos == 'top' %}
+      <nav class="epp-path" data-percorso="{{ p.id }}" aria-label="Percorso di lettura" {% unless epp_first %}hidden{% endunless %}>
+        <span class="epp-path__label">Percorso</span>
+        <a class="epp-path__name" href="{{ '/percorsi/' | relative_url }}#{{ p.ancora }}">{{ p.nome }}</a>
+        <ol class="epp-path__steps">
+          {% for s in p.passi %}
+            <li>
+              <a
+                class="epp-path__seg{% if forloop.index == idx %} is-current{% elsif forloop.index < idx %} is-done{% endif %}"
+                href="{{ s.url | relative_url }}?percorso={{ p.id }}"
+                title="{{ forloop.index }}. {{ s.testo | escape }}"
+                {% if forloop.index == idx %}aria-current="step"{% endif %}
+              ><span class="visually-hidden">{{ forloop.index }} di {{ n }}: {{ s.testo | escape }}</span></a>
+            </li>
+          {% endfor %}
+        </ol>
+        <span class="epp-path__count">articolo {{ idx }} di {{ n }}</span>
+      </nav>
+
+    {% else %}
+      {% assign prev_i = idx | minus: 2 %}
+      <nav class="epp-path-nav" data-percorso="{{ p.id }}" aria-labelledby="epp-path-nav-{{ p.id }}" {% unless epp_first %}hidden{% endunless %}>
+        <h2 id="epp-path-nav-{{ p.id }}" class="epp-path-nav__title">Continua il percorso “{{ p.nome }}”</h2>
+        <div class="epp-path-nav__cards">
+          {% if idx > 1 %}
+            {% assign prev = p.passi[prev_i] %}
+            <a class="epp-path-nav__card" href="{{ prev.url | relative_url }}?percorso={{ p.id }}">
+              <span class="epp-path-nav__kicker">Precedente · {{ idx | minus: 1 }} di {{ n }}</span>
+              <span class="epp-path-nav__name">{{ prev.testo }}</span>
+            </a>
+          {% else %}
+            <div class="epp-path-nav__card epp-path-nav__card--empty">
+              <span class="epp-path-nav__kicker">Precedente</span>
+              <span>Sei al primo articolo del percorso.</span>
+            </div>
+          {% endif %}
+
+          {% if idx < n %}
+            {% assign next = p.passi[idx] %}
+            <a class="epp-path-nav__card epp-path-nav__card--next" href="{{ next.url | relative_url }}?percorso={{ p.id }}">
+              <span class="epp-path-nav__kicker">Prossimo · {{ idx | plus: 1 }} di {{ n }}</span>
+              <span class="epp-path-nav__name">{{ next.testo }}</span>
+              <span class="epp-path-nav__desc">{{ next.desc | markdownify | strip_html | strip }}</span>
+            </a>
+          {% else %}
+            <a class="epp-path-nav__card epp-path-nav__card--next" href="{{ '/partecipa/' | relative_url }}">
+              <span class="epp-path-nav__kicker">Percorso completato</span>
+              <span class="epp-path-nav__name">E ora? Entra in un gruppo di lavoro</span>
+              <span class="epp-path-nav__desc">Oppure scegli un altro percorso dalla pagina Percorsi.</span>
+            </a>
+          {% endif %}
+        </div>
+      </nav>
+    {% endif %}
+
+    {% assign epp_first = false %}
+  {% endif %}
+{% endfor %}
+
+{% if include.pos == 'bottom' and epp_first == false %}
+  <script>
+    (function () {
+      var parts = document.querySelectorAll('[data-percorso]');
+      if (parts.length === 0) return;
+      var ids = [];
+      parts.forEach(function (el) {
+        if (ids.indexOf(el.dataset.percorso) === -1) ids.push(el.dataset.percorso);
+      });
+      var fromUrl = new URLSearchParams(window.location.search).get('percorso');
+      var stored = null;
+      try {
+        stored = window.localStorage.getItem('epp-percorso');
+      } catch (e) {}
+      var pick = ids.indexOf(fromUrl) !== -1 ? fromUrl : ids.indexOf(stored) !== -1 ? stored : ids[0];
+      if (ids.indexOf(fromUrl) !== -1) {
+        try {
+          window.localStorage.setItem('epp-percorso', fromUrl);
+        } catch (e) {}
+      }
+      parts.forEach(function (el) {
+        el.hidden = el.dataset.percorso !== pick;
+      });
+    })();
+  </script>
+{% endif %}
